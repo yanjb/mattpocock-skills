@@ -24,6 +24,24 @@ If you want to keep up with changes to these skills, and any new ones I create, 
 
 ## Quickstart (30-second setup)
 
+### Option A: Claude Code plugin marketplace (recommended)
+
+1. Add this repo as a marketplace and install the plugin:
+
+```bash
+/plugin marketplace add yanjb/mattpocock-skills
+/plugin install mattpocock-skills@mattpocock
+```
+
+2. Run `/setup-matt-pocock-skills` in your agent. It will:
+   - Ask you which issue tracker you want to use (GitHub, Linear, or local files)
+   - Ask you what labels you apply to tickets when you triage them (`/triage` uses labels)
+   - Ask you where you want to save any docs we create
+
+3. Bam - you're ready to go.
+
+### Option B: skills.sh installer (pick individual skills)
+
 1. Run the skills.sh installer:
 
 ```bash
@@ -32,10 +50,7 @@ npx skills@latest add mattpocock/skills
 
 2. Pick the skills you want, and which coding agents you want to install them on. **Make sure you select `/setup-matt-pocock-skills`**.
 
-3. Run `/setup-matt-pocock-skills` in your agent. It will:
-   - Ask you which issue tracker you want to use (GitHub, Linear, or local files)
-   - Ask you what labels you apply to tickets when you triage them (`/triage` uses labels)
-   - Ask you where you want to save any docs we create
+3. Run `/setup-matt-pocock-skills` in your agent (same as Option A).
 
 4. Bam - you're ready to go.
 
